@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["aravk <aravkasi@gmail.com>"]
 edition = "2018"
 description = "Parse discord-flavored markdown"
+repository = "https://github.com/cubetastic33/discord-markdown"
 license-file = "LICENSE"
 keywords = ["discord", "markdown", "parser"]
 categories = ["parser-implementations"]
