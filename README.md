@@ -1,7 +1,7 @@
 # discord-markdown
 Parse discord-flavored markdown
 
-[![crates.io 0.1.0](https://img.shields.io/crates/v/discord-markdown?style=flat-square)](https://crates.io/crates/discord-markdown)
+[![crates.io 0.1.1](https://img.shields.io/crates/v/discord-markdown?style=flat-square)](https://crates.io/crates/discord-markdown)
 ![license](https://img.shields.io/crates/l/discord-markdown?style=flat-square)
 
 This parser was written for use with [cheesecake](https://github.com/cubetastic33/cheesecake),
