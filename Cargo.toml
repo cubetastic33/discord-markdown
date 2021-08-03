@@ -1,0 +1,14 @@
+[package]
+name = "discord-markdown"
+version = "0.1.0"
+authors = ["aravk <aravkasi@gmail.com>"]
+edition = "2018"
+description = "Parse discord-flavored markdown"
+license-file = "LICENSE"
+keywords = ["discord", "markdown", "parser"]
+categories = ["parser-implementations"]
+
+[dependencies]
+nom = { version = "6.2.1", features = ["regexp"] }
+lazy_static = "1.4.0"
+html-escape = "0.2.9"
