@@ -11,7 +11,7 @@ text in the generated HTML will be HTML-escaped, so you can safely insert the ou
 DOM.
 
 ### Documentation
-Read the API documentation on [docs.rs](https://docs.rs/crate/discord-markdown)
+Read the API documentation on [docs.rs](https://docs.rs/crate/discord-markdown).
 
 ### Usage
 Call `parser::parse` on the input string, and it will return a vector of `Expression`s. Supply
