@@ -60,7 +60,7 @@ fn traverse(ast: Vec<Expression>, callbacks: &Callbacks<impl Callback, impl Call
             },
             Expression::Channel(id) => format!("<span class=\"channel\" data-id=\"{}\">#{}</span>", id, (callbacks.channel)(id).0),
             Expression::Hyperlink(text, href) => format!("<a href=\"{}\" target=\"_blank\">{}</a>", href, text),
-            Expression::MultilineCode(text) => format!("<pre class=\"multiline_code\">{}</pre>", text.replace("\n", "<br>")),
+            Expression::MultilineCode(text) => format!("<pre class=\"multiline_code\">{}</pre>", text.trim().replace("\n", "<br>")),
             Expression::InlineCode(text) => format!("<span class=\"inline_code\">{}</span>", text.replace("\n", "<br>")),
             Expression::Blockquote(a) => format!("<blockquote>{}</blockquote>", traverse(a, callbacks, false)),
             Expression::Spoiler(a) => format!("<span class=\"spoiler\">{}</span>", traverse(a, callbacks, false)),
