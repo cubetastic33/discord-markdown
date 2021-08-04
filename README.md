@@ -6,17 +6,16 @@ Parse discord-flavored markdown
 
 This parser was written for use with [cheesecake](https://github.com/cubetastic33/cheesecake),
 so the convertor function provided is designed for that. If this function doesn't suit your
-use-case, you can write your own convertor function to generate HTML from the parsed AST. The
-text in the generated HTML will be HTML-escaped, so you can safely insert the output into the
-DOM.
+use-case, you can write your own convertor function to generate HTML from the parsed AST.
 
 ### Documentation
 Read the API documentation on [docs.rs](https://docs.rs/crate/discord-markdown).
 
 ### Usage
 Call `parser::parse` on the input string, and it will return a vector of `Expression`s. Supply
-this vector to `convertor::to_html` to get an HTML string. If your input text will also have
-custom emoji, user mentions, role mentions, or channel mentions, then use
+this vector to `convertor::to_html` to get an HTML string. The text in the generated HTML will
+be HTML-escaped, so you can safely insert the output into the DOM. If your input text will also
+have custom emoji, user mentions, role mentions, or channel mentions, then use
 `convertor::to_html_with_callbacks` instead.
 
 Call `parser::parse_with_md_hyperlinks` instead if you want to also parse links with alt text,
